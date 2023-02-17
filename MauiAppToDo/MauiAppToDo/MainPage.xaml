@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppToDo.MainPage"
+             BackgroundColor="{StaticResource Tertiary}">
+
+    <Grid>
+        <StackLayout Margin="20,50,20,0">
+            
+            <!--logo-->
+            <Image Source="loginlogo.jpg" HeightRequest="100"/>
+            
+            <!--Text-->
+            <StackLayout Margin="0,40">
+                <Label Style="{StaticResource Welcome}"  Text="To-Do App"/>
+                <Label Style="{StaticResource TextStyle}" HorizontalOptions="Center" Text="Sign İn to continue"/>
+            </StackLayout>
+
+            <StackLayout>
+
+                <!--user name-->
+                <Label Style="{StaticResource TextStyle}" Text="User Name"/>
+                <Grid Margin="0,5">
+                    <Frame BackgroundColor="{StaticResource Secondary}" CornerRadius="2"/>
+                    <Entry Style="{StaticResource TextStyle}" Placeholder=" Enter username" 
+                           PlaceholderColor="{StaticResource Gray600}" x:Name="EnterUserName"/>
+                </Grid>
+
+                <!--password-->
+                <Label Style="{StaticResource TextStyle}" Text="Password"/>
+                <Grid Margin="0,5">
+                    <Frame BackgroundColor="{StaticResource Secondary}" CornerRadius="2"/>
+                    <Entry Style="{StaticResource InputLabelStayle}" Placeholder="Enter password" 
+                           PlaceholderColor="{StaticResource Gray600}" IsPassword="True" x:Name="EnterPassword" />
+                </Grid>
+
+                <!--button-->
+                <Button x:Name="BtnMoveToToDoPage" Clicked="BtnMoveToToDoPage_Clicked" 
+                    Margin="0,15" CornerRadius="2" BackgroundColor="{StaticResource Secondary}" 
+                        Text="Sign In" TextColor="{StaticResource Primary}" FontFamily="OpenSansSemibold" />
+
+                <!--Forgot Password And Register-->
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Style="{StaticResource TextStyle}"
+                           Text="Forgot Password?" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand"/>
+                    <Label Style="{StaticResource TextStyle}" 
+                           Text="Register" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" />
+                </StackLayout>
+
+            </StackLayout>
+
+        </StackLayout>
+    </Grid>
+
+
+</ContentPage>
