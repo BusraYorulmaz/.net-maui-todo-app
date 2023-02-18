@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3RoYgwQRoiVtnIywA5LN1g6s65+rLxVmlGmOtY/bQ/jexs/aCdCPIh1SZFyHX1T6sg8aluKrSunc6WeK3NLI7A==",
+  "dgSpecHash": "BQemENLUPA0/aG0jWTdOQ6OtaJT2rwIpyJaAxAL5xYb0jY/PZY3EdLHCBC1FyjDGgHqiPhRJ4q2zVb4VYzJeNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\busra\\source\\repos\\MauiAppToDo\\MauiAppToDo\\MauiAppToDo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\busra\\.nuget\\packages\\communitytoolkit.maui\\2.0.0\\communitytoolkit.maui.2.0.0.nupkg.sha512",
+    "C:\\Users\\busra\\.nuget\\packages\\communitytoolkit.maui.core\\2.0.0\\communitytoolkit.maui.core.2.0.0.nupkg.sha512",
     "C:\\Users\\busra\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\busra\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\busra\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

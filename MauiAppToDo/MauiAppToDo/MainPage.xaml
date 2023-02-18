@@ -39,6 +39,8 @@
                     Margin="0,15" CornerRadius="2" BackgroundColor="{StaticResource Secondary}" 
                         Text="Sign In" TextColor="{StaticResource Primary}" FontFamily="OpenSansSemibold" />
 
+                
+                
                 <!--Forgot Password And Register-->
                 <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
                     <Label Style="{StaticResource TextStyle}"

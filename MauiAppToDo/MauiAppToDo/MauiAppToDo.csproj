@@ -100,10 +100,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Maui" Version="2.0.0" />
 	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.4.50" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="PopupPageAddToDo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ToDoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

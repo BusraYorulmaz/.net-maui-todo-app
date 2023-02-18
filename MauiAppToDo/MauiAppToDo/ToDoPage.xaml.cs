@@ -1,3 +1,7 @@
+using CommunityToolkit.Maui.Views;
+using MauiToolkitPopupSample;
+
+
 namespace MauiAppToDo;
 
 public partial class ToDoPage : ContentPage
@@ -15,4 +19,8 @@ public partial class ToDoPage : ContentPage
 		LvToDoList.ItemsSource = toDoList;
     }
 
+    private void BtnClickedPopup(object sender, EventArgs e)
+    {
+        this.ShowPopup(new PopupPageAddToDo());
+    }
 }

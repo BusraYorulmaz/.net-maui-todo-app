@@ -22,6 +22,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiAppToDo.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
+[C:/Users/busra/source/repos/MauiAppToDo/MauiAppToDo/PopupPageAddToDo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiAppToDo.PopupPageAddToDo.xaml
+build_metadata.AdditionalFiles.TargetPath = PopupPageAddToDo.xaml
+build_metadata.AdditionalFiles.RelativePath = PopupPageAddToDo.xaml
+
 [C:/Users/busra/source/repos/MauiAppToDo/MauiAppToDo/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiAppToDo.Resources.Styles.Colors.xaml
