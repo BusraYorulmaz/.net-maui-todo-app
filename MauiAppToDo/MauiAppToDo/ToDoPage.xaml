@@ -51,11 +51,10 @@
                 <Label Text="Do Sport" TextColor="Black" FontSize="18"/>
             </HorizontalStackLayout>
         </Frame>
-
         <Frame Background="{StaticResource Gray300}" Margin="5,5,0,0" CornerRadius="4" BorderColor="{StaticResource Gray300}">
             <HorizontalStackLayout>
                 <RadioButton Content="" IsChecked="True"/>
-                <Label Text="Bisiklet binildi" TextColor="Black" FontSize="18"/>
+                <Label Text="Read a book for half an hour" TextColor="Black" FontSize="18"/>
             </HorizontalStackLayout>
         </Frame>
     </VerticalStackLayout>
