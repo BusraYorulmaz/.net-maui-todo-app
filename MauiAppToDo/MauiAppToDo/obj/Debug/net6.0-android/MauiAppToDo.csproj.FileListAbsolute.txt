@@ -972,6 +972,9 @@ C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\lp\
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\lp\161\jl\files.cache
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\assets\CommunityToolkit.Maui.Core.dll
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\assets\CommunityToolkit.Maui.dll
+C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\src\crc64159f3caeb1269279\MauiDrawingView.java
+C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\src\crc64159f3caeb1269279\MauiPopup.java
+C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\src\crc648fc34c62be8fbbff\Snackbar_SnackbarCallback.java
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\assets\System.Data.dll
@@ -979,6 +982,3 @@ C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\and
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\assets\System.Xml.dll
-C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\src\crc64159f3caeb1269279\MauiDrawingView.java
-C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\src\crc64159f3caeb1269279\MauiPopup.java
-C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-android\android\src\crc648fc34c62be8fbbff\Snackbar_SnackbarCallback.java

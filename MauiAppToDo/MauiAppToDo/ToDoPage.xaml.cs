@@ -10,8 +10,8 @@ public partial class ToDoPage : ContentPage
 	{ 
 		new ToDoListClass(){ ToDoName =" Read a magazine"},
         new ToDoListClass(){ ToDoName =" Study for exam"},
-        new ToDoListClass(){ ToDoName =" Attend the internship meeting"},
-		new ToDoListClass(){ ToDoName =" Do sport"}
+        new ToDoListClass(){ ToDoName =" Attend the internship meeting"}
+		  
     }; 
 	public ToDoPage()
 	{

@@ -3,68 +3,61 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppToDo.ToDoPage"
              Title="To Do Page"
-             BackgroundColor="White">
+             BackgroundColor="{StaticResource Blue200Accent}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="BtnPopup" Text="Add To Do" Clicked="BtnClickedPopup"/>
+    </ContentPage.ToolbarItems>
 
 
-    <StackLayout>
-    <ListView x:Name="LvToDoList" HasUnevenRows="True" Margin="10,10">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                    <ViewCell>
+    <VerticalStackLayout Margin="15,0,15,0"> 
+        <!--To do list başlığı -->
+        <Label Margin="0,15,0,0" Text="To Do List" FontSize="25" FontAttributes="Bold" />
+        
+        <!--Liste Yapısı-->
+        <ListView x:Name="LvToDoList" HasUnevenRows="True" Margin="0,10">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                        <ViewCell>
 
-                        <!--To Do List--><!--
-                        <Grid >               
-                            
-                            --><!--<StackLayout Padding="20" VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                                <Label Margin="20,10" Style="{StaticResource TextStyle}" TextColor="{StaticResource Primary}" Text="{Binding ToDoName}" 
-                                FontSize="Medium" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand"/>
-                                <RadioButton Content=""/>
-                            </StackLayout>--><!--
-                            <HorizontalStackLayout>
-                                <RadioButton Content=""/>
-                                <Label Margin="0,10,10,10" Style="{StaticResource TextStyle}" TextColor="{StaticResource Primary}" Text="{Binding ToDoName}" 
-                                FontSize="Small" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand"/>
-                          
-                            <Button Margin="0,0,10,0" WidthRequest="25" HeightRequest="25" BackgroundColor="Blue"/>
-                            <Button WidthRequest="25" HeightRequest="25" BackgroundColor="Red" />
-                            </HorizontalStackLayout>
+                            <!--To Do List-->
+                            <SwipeView Margin="5">
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Delete" BackgroundColor="{StaticResource Red}" />
+                                        <SwipeItem Text="Updelete" BackgroundColor="{StaticResource Green}" />
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
 
-                        </Grid>-->
+                                <Frame CornerRadius="4" BorderColor="{StaticResource White}" >
+                                    <HorizontalStackLayout>
+                                        <RadioButton Content=""/>
+                                        <Label Style="{StaticResource TextStyle}" TextColor="{StaticResource Primary}" 
+                                               Text="{Binding ToDoName}" FontSize="Medium" />
+                                    </HorizontalStackLayout> 
+                                </Frame>
+                            </SwipeView>
 
-                        <SwipeView>
-                            <SwipeView.RightItems>
-                                <SwipeItems>
-                                    <SwipeItem Text="Delete"
-                                               BackgroundColor="{StaticResource Red}"
-                                               />
-                                    <SwipeItem Text="Updelete"
-                                               BackgroundColor="{StaticResource Green}"
-                                               />
-                                </SwipeItems>
-                            </SwipeView.RightItems>
-
-                            <Grid>
-                                <HorizontalStackLayout>
-                                    <RadioButton Content="" />
-                                    <Label Margin="0,10,10,10" Style="{StaticResource TextStyle}" TextColor="{StaticResource Primary}" Text="{Binding ToDoName}" 
-                                FontSize="Medium" />
-                                
-                                </HorizontalStackLayout>
-                            </Grid>
-                        </SwipeView>
-
-
-
-                    </ViewCell>
+                        </ViewCell>
                 </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <!--Complated-->
+        <Label Margin="0,5,0,10" Text="Completed" FontSize="25" FontAttributes="Bold" />
 
-        <!--Add to do--> <!--popupa açılan button-->
-        <Button x:Name="BtnPopup" Clicked="BtnClickedPopup" 
-                    Margin="0,15" CornerRadius="2" BackgroundColor="{StaticResource Secondary}" 
-                        Text="Add ToDo" TextColor="{StaticResource Primary}" FontFamily="OpenSansSemibold" />
+        <Frame Background="{StaticResource Gray300}" CornerRadius="4" Margin="5,5,0,0" BorderColor="{StaticResource Gray300}">
+            <HorizontalStackLayout>
+                <RadioButton Content="" IsChecked="True"/>
+                <Label Text="Do Sport" TextColor="Black" FontSize="18"/>
+            </HorizontalStackLayout>
+        </Frame>
 
-    </StackLayout>
+        <Frame Background="{StaticResource Gray300}" Margin="5,5,0,0" CornerRadius="4" BorderColor="{StaticResource Gray300}">
+            <HorizontalStackLayout>
+                <RadioButton Content="" IsChecked="True"/>
+                <Label Text="Bisiklet binildi" TextColor="Black" FontSize="18"/>
+            </HorizontalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
   
 </ContentPage>
