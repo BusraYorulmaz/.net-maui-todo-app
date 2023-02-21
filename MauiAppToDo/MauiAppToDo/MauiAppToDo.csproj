@@ -52,32 +52,26 @@
 	  <AndroidResource Remove="NewFolder2\**" />
 	  <AndroidResource Remove="NewFolder3\**" />
 	  <AndroidResource Remove="NewFolder4\**" />
-	  <AndroidResource Remove="NewFolder\**" />
 	  <Compile Remove="NewFolder1\**" />
 	  <Compile Remove="NewFolder2\**" />
 	  <Compile Remove="NewFolder3\**" />
 	  <Compile Remove="NewFolder4\**" />
-	  <Compile Remove="NewFolder\**" />
 	  <EmbeddedResource Remove="NewFolder1\**" />
 	  <EmbeddedResource Remove="NewFolder2\**" />
 	  <EmbeddedResource Remove="NewFolder3\**" />
 	  <EmbeddedResource Remove="NewFolder4\**" />
-	  <EmbeddedResource Remove="NewFolder\**" />
 	  <MauiCss Remove="NewFolder1\**" />
 	  <MauiCss Remove="NewFolder2\**" />
 	  <MauiCss Remove="NewFolder3\**" />
 	  <MauiCss Remove="NewFolder4\**" />
-	  <MauiCss Remove="NewFolder\**" />
 	  <MauiXaml Remove="NewFolder1\**" />
 	  <MauiXaml Remove="NewFolder2\**" />
 	  <MauiXaml Remove="NewFolder3\**" />
 	  <MauiXaml Remove="NewFolder4\**" />
-	  <MauiXaml Remove="NewFolder\**" />
 	  <None Remove="NewFolder1\**" />
 	  <None Remove="NewFolder2\**" />
 	  <None Remove="NewFolder3\**" />
 	  <None Remove="NewFolder4\**" />
-	  <None Remove="NewFolder\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -101,6 +95,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Maui" Version="2.0.0" />
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.4.50" />
 	</ItemGroup>
 

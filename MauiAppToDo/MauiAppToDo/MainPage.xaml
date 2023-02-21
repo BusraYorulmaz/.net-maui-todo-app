@@ -2,7 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppToDo.MainPage"
-             BackgroundColor="{StaticResource Tertiary}">
+             BackgroundColor="{StaticResource Primary}"  >
+
+    <!--<ContentPage.Toolbar>
+        <Toolbar    />
+    </ContentPage.Toolbar>-->
 
     <Grid>
         <StackLayout Margin="20,50,20,0">

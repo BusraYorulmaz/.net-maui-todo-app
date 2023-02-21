@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Maui;
+using MauiAppToDo.ViewModel;
 
 namespace MauiAppToDo;
 
@@ -17,7 +18,10 @@ public static class MauiProgram
                 fonts.AddFont("Sitka.ttf", "Sitka");
 
             });
+		builder.Services.AddSingleton<ToDoPage>();
+        builder.Services.AddSingleton<MainViewModel>();
 
-		return builder.Build();
+
+        return builder.Build();
 	}
 }
