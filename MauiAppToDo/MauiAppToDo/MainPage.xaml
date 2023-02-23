@@ -9,15 +9,15 @@
     </ContentPage.Toolbar>-->
 
     <Grid>
-        <StackLayout Margin="20,50,20,0">
+        <StackLayout Margin="20,0,20,0">
             
             <!--logo-->
-            <Image Source="loginlogo.jpg" HeightRequest="100"/>
+            <Image Source="todoapplogo.png" HeightRequest="250"/>
             
             <!--Text-->
-            <StackLayout Margin="0,40">
-                <Label Style="{StaticResource Welcome}"  Text="To-Do App"/>
-                <Label Style="{StaticResource TextStyle}" HorizontalOptions="Center" Text="Sign İn to continue"/>
+            <StackLayout Margin="0,0">
+                <!-- <Label Style="{StaticResource Welcome}"  Text="To-Do App"/> -->
+                <Label Style="{StaticResource TextStyle}" HorizontalOptions="Center" Text="Sign İn to continue" FontSize="18" FontAttributes="Bold"/>
             </StackLayout>
 
             <StackLayout>
@@ -27,7 +27,7 @@
                 <Grid Margin="0,5">
                     <Frame BackgroundColor="{StaticResource Secondary}" CornerRadius="2"/>
                     <Entry Style="{StaticResource TextStyle}" Placeholder=" Enter username" 
-                           PlaceholderColor="{StaticResource Gray600}" x:Name="EnterUserName"/>
+                           PlaceholderColor="{StaticResource Gray600}" x:Name="EnterUserName" FontAttributes="Italic"/>
                 </Grid>
 
                 <!--password-->
@@ -35,7 +35,7 @@
                 <Grid Margin="0,5">
                     <Frame BackgroundColor="{StaticResource Secondary}" CornerRadius="2"/>
                     <Entry Style="{StaticResource InputLabelStayle}" Placeholder="Enter password" 
-                           PlaceholderColor="{StaticResource Gray600}" IsPassword="True" x:Name="EnterPassword" />
+                           PlaceholderColor="{StaticResource Gray600}" IsPassword="True" x:Name="EnterPassword" FontAttributes="Italic"/>
                 </Grid>
 
                 <!--button-->
@@ -45,9 +45,9 @@
 
                 <!--Forgot Password And Register-->
                 <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
-                    <Label Style="{StaticResource TextStyle}"
+                    <Label Style="{StaticResource TextStyle}" FontAttributes="Italic"
                            Text="Forgot Password?" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand"/>
-                    <Label Style="{StaticResource TextStyle}" 
+                    <Label Style="{StaticResource TextStyle}" FontAttributes="Italic"
                            Text="Register" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" />
                 </StackLayout>
 

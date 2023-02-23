@@ -32,7 +32,6 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
 
@@ -85,6 +84,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	 
+	  <None Remove="Resources\Fonts\fa-solid-900.ttf" />
+	 
 	  <None Remove="Resources\Images\loginlogo.jpg" />
 	  <None Remove="Resources\Splash\splash.svg" />
 	</ItemGroup>
@@ -106,6 +108,10 @@
 	  <MauiXaml Update="ToDoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" />
 	</ItemGroup>
 
 </Project>

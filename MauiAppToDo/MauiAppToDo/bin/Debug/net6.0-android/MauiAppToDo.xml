@@ -10,20 +10,11 @@
         <member name="P:MauiAppToDo.ViewModel.MainViewModel.TodoItems">
             <inheritdoc cref="F:MauiAppToDo.ViewModel.MainViewModel.todoItems"/>
         </member>
-        <member name="P:MauiAppToDo.ViewModel.MainViewModel.ComplatedItems">
-            <inheritdoc cref="F:MauiAppToDo.ViewModel.MainViewModel.complatedItems"/>
-        </member>
         <member name="F:MauiAppToDo.ViewModel.MainViewModel.addToDoCommand">
             <summary>The backing field for <see cref="P:MauiAppToDo.ViewModel.MainViewModel.AddToDoCommand"/>.</summary>
         </member>
         <member name="P:MauiAppToDo.ViewModel.MainViewModel.AddToDoCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:MauiAppToDo.ViewModel.MainViewModel.AddToDo"/>.</summary>
-        </member>
-        <member name="F:MauiAppToDo.ViewModel.MainViewModel.addComplatedCommand">
-            <summary>The backing field for <see cref="P:MauiAppToDo.ViewModel.MainViewModel.AddComplatedCommand"/>.</summary>
-        </member>
-        <member name="P:MauiAppToDo.ViewModel.MainViewModel.AddComplatedCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:MauiAppToDo.ViewModel.MainViewModel.AddComplated"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>

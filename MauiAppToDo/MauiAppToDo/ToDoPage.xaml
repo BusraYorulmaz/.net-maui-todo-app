@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppToDo.ToDoPage"
              xmlns:viewmodel="clr-namespace:MauiAppToDo.ViewModel"
+             xmlns:models="clr-namespace:MauiAppToDo.Models"
              x:DataType="viewmodel:MainViewModel"
              Title="To Do Page"
              BackgroundColor="{StaticResource Blue200Accent}">
@@ -91,6 +92,31 @@
                             </SwipeItems>
                         </SwipeView.RightItems>
                         <Frame CornerRadius="4" BorderColor="{StaticResource White}">
+                            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <RadioButton Content=""/>
+                                <Label Text="{Binding .}" HorizontalOptions="StartAndExpand" FontSize="20"></Label>
+                                <Label FontFamily="FaSolid" Text="{x:Static models:FaSolidIcons.ArrowRight}" 
+                                       HorizontalOptions="EndAndExpand" FontSize="22"></Label>
+                            </StackLayout>
+                            
+                        </Frame>
+                    </SwipeView>                  
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+        <!--
+        <CollectionView ItemsSource="{Binding TodoItems}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type x:String}">
+                    <SwipeView Margin="5">
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem Text="Delete" BackgroundColor="Red"/>
+                                <SwipeItem Text="Update" BackgroundColor="Green"/>
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <Frame CornerRadius="4" BorderColor="{StaticResource White}">
                             <HorizontalStackLayout>
                                 <RadioButton Content=""/>
                                 <Label Text="{Binding .}" FontSize="Medium"></Label>
@@ -100,6 +126,8 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        -->
+        
 
         <!--<CollectionView ItemsSource="{Binding TodoItems}">
             <CollectionView.ItemTemplate>
@@ -115,9 +143,10 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>-->
-        
+
+        <VerticalStackLayout>        
         <!--Complated-->
-        <Label Margin="0,5,0,10" Text="Completed" FontSize="25" FontAttributes="Bold" />
+        <Label Margin="0,10,0,0" Text="Completed" FontSize="25" FontAttributes="Bold" />
 
         <!--Complated ToDo-->
         <Frame Background="{StaticResource Gray300}" CornerRadius="4" Margin="5,5,0,0" BorderColor="{StaticResource Gray300}">
@@ -132,6 +161,10 @@
                 <Label Text="Read a book for half an hour" TextColor="Black" FontSize="18"/>
             </HorizontalStackLayout>
         </Frame>
+        </VerticalStackLayout>
+
+
+
     </VerticalStackLayout>
   
 </ContentPage>
