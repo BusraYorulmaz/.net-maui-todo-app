@@ -263,3 +263,5 @@ C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-maccatalyst
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
 C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\todoapplogo.png
+C:\Users\busra\source\repos\MauiAppToDo\MauiAppToDo\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\f\fa-solid-900.ttf

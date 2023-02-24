@@ -14,18 +14,18 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     String to_do;
 
-    [ObservableProperty]    
+    [ObservableProperty]
     ObservableCollection<String> todoItems;
 
 
     //complated
-    /*[ObservableProperty]
-    ObservableCollection<String> complatedItems;*/
+    [ObservableProperty]
+    ObservableCollection<String> complatedItems;
 
-    public MainViewModel() 
+    public MainViewModel()
     {
-        TodoItems= new ObservableCollection<String>();  
-        //ComplatedItems= new ObservableCollection<String>();
+        TodoItems = new ObservableCollection<String>();
+        ComplatedItems= new ObservableCollection<String>();
     }
 
     [RelayCommand]
@@ -35,6 +35,14 @@ public partial class MainViewModel : ObservableObject
         To_do = string.Empty;
     }
 
+    [RelayCommand]
+    void ComplatedToDo()
+    {
+
+        ComplatedItems.Add(To_do);
+        
+    }
+
     /*[RelayCommand]
     void AddComplated()
     {
@@ -42,6 +50,6 @@ public partial class MainViewModel : ObservableObject
         To_do= string.Empty;
     }*/
 
-  
+
 
 }

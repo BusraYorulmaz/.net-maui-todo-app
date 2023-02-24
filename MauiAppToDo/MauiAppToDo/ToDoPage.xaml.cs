@@ -2,24 +2,17 @@ using CommunityToolkit.Maui.Views;
 using MauiAppToDo.ViewModel;
 using MauiToolkitPopupSample;
 
-
 namespace MauiAppToDo;
 
 public partial class ToDoPage : ContentPage
 {
-
-    /* List<ToDoListClass> toDoList = new List<ToDoListClass>() 
-{ 
-    new ToDoListClass(){ ToDoName =" Read a magazine"},
-   new ToDoListClass(){ ToDoName =" Study for exam"},
-    new ToDoListClass(){ ToDoName =" Attend the internship meeting"}
-
- }; */
-    public ToDoPage(MainViewModel mvm)
+    public ToDoPage(MainViewModel mvm, string userName)
 	{
 		InitializeComponent();
         BindingContext= mvm;
-		//LvToDoList.ItemsSource = toDoList;
+        //LvToDoList.ItemsSource = toDoList;
+
+        LblUserName.Text = userName; //ismi diðer sayfaya taþýrken
     }
 
      private void BtnClickedPopup(object sender, EventArgs e)

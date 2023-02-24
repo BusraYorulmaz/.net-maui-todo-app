@@ -17,13 +17,9 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 fonts.AddFont("Sitka.ttf", "Sitka");
                 fonts.AddFont("fa-solid-900.ttf", "FaSolid");
-
-
-
             });
 		builder.Services.AddSingleton<ToDoPage>();
         builder.Services.AddSingleton<MainViewModel>();
-
 
         return builder.Build();
 	}
