@@ -75,10 +75,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="PopupPageAddToDo.xaml">
+	  <MauiXaml Update="Views\PopupPageAddToDo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ToDoPage.xaml">
+	  <MauiXaml Update="Views\ToDoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

@@ -10,8 +10,8 @@
         <member name="P:MauiAppToDo.ViewModel.MainViewModel.TodoItems">
             <inheritdoc cref="F:MauiAppToDo.ViewModel.MainViewModel.todoItems"/>
         </member>
-        <member name="P:MauiAppToDo.ViewModel.MainViewModel.ComplatedItems">
-            <inheritdoc cref="F:MauiAppToDo.ViewModel.MainViewModel.complatedItems"/>
+        <member name="P:MauiAppToDo.ViewModel.MainViewModel.ComplatedList">
+            <inheritdoc cref="F:MauiAppToDo.ViewModel.MainViewModel.complatedList"/>
         </member>
         <member name="F:MauiAppToDo.ViewModel.MainViewModel.addToDoCommand">
             <summary>The backing field for <see cref="P:MauiAppToDo.ViewModel.MainViewModel.AddToDoCommand"/>.</summary>
@@ -19,11 +19,17 @@
         <member name="P:MauiAppToDo.ViewModel.MainViewModel.AddToDoCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:MauiAppToDo.ViewModel.MainViewModel.AddToDo"/>.</summary>
         </member>
-        <member name="F:MauiAppToDo.ViewModel.MainViewModel.complatedToDoCommand">
-            <summary>The backing field for <see cref="P:MauiAppToDo.ViewModel.MainViewModel.ComplatedToDoCommand"/>.</summary>
+        <member name="F:MauiAppToDo.ViewModel.MainViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:MauiAppToDo.ViewModel.MainViewModel.DeleteCommand"/>.</summary>
         </member>
-        <member name="P:MauiAppToDo.ViewModel.MainViewModel.ComplatedToDoCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:MauiAppToDo.ViewModel.MainViewModel.ComplatedToDo"/>.</summary>
+        <member name="P:MauiAppToDo.ViewModel.MainViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:MauiAppToDo.ViewModel.MainViewModel.Delete(System.String)"/>.</summary>
+        </member>
+        <member name="F:MauiAppToDo.ViewModel.MainViewModel.complatedCommand">
+            <summary>The backing field for <see cref="P:MauiAppToDo.ViewModel.MainViewModel.ComplatedCommand"/>.</summary>
+        </member>
+        <member name="P:MauiAppToDo.ViewModel.MainViewModel.ComplatedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:MauiAppToDo.ViewModel.MainViewModel.Complated(System.String)"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>

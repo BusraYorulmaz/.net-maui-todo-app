@@ -11,10 +11,10 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="PopupPageAddToDo.xaml">
+    <MauiXaml Update="Views\PopupPageAddToDo.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="ToDoPage.xaml">
+    <MauiXaml Update="Views\ToDoPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

@@ -17,39 +17,54 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     ObservableCollection<String> todoItems;
 
-
-    //complated
     [ObservableProperty]
-    ObservableCollection<String> complatedItems;
+    ObservableCollection<String> complatedList;
+    
 
     public MainViewModel()
     {
         TodoItems = new ObservableCollection<String>();
-        ComplatedItems= new ObservableCollection<String>();
+        ComplatedList= new ObservableCollection<String>();
     }
+ 
 
     [RelayCommand]
     void AddToDo()
     {
+        if (string.IsNullOrWhiteSpace(To_do))
+            return;
         TodoItems.Add(To_do);
         To_do = string.Empty;
     }
 
     [RelayCommand]
-    void ComplatedToDo()
+    void Delete(string del)
     {
-
-        ComplatedItems.Add(To_do);
-        
+        if(TodoItems.Contains(del))
+        {
+            TodoItems.Remove(del);
+        }
     }
 
-    /*[RelayCommand]
-    void AddComplated()
+    /*
+    private bool isChecked;
+    public bool IsChecked
     {
-        ComplatedItems.Add(To_do);
-        To_do= string.Empty;
-    }*/
+        get => isChecked;
+        set => SetProperty(ref isChecked, value);
+    }
+    */
+
+    [RelayCommand]
+    void Complated(string completedTodo)
+    {
+       
+            ComplatedList.Add(completedTodo);
+            TodoItems.Remove(completedTodo);
+       
+    }
 
 
+ 
 
 }
