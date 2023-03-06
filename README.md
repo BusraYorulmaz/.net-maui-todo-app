@@ -1,2 +1,5 @@
 # .NET MAUI TODO APP
+
+- .NET MAUİ 
+- MVVM
  
